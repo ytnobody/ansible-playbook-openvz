@@ -1,0 +1,13 @@
+- name: install vzctl
+  apt: name=vzctl
+
+- name: install vzquota
+  apt: name=vzquota
+
+- name: install ploop
+  apt: name=ploop
+
+- name: install vzstats
+  apt: name=vzstats
+
+

@@ -1,0 +1,7 @@
+- name: install openvz kernel
+  apt: name=linux-image-openvz-amd64
+
+- name: change GRUB_DEFAULT to openvz kernel
+  shell: sed -i 's/GRUB_DEFAULT=0/GRUB_DEFAULT="Advanced options for Ubuntu>Ubuntu, with Linux 2.6.32-openvz-042stab093.5-amd64"/'
+
+

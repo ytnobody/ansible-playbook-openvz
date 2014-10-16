@@ -1,0 +1,8 @@
+- hosts: openvz-servers
+  sudo: yes
+  tasks:
+
+    - include: ../tasks/openvz-sysctl.yml
+    - include: ../tasks/debian/openvz-apt.yml
+    - include: ../tasks/debian/openvz-kernel.yml
+    - include: ../tasks/debian/openvz-tools.yml

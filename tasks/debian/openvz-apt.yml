@@ -1,0 +1,6 @@
+- name: add apt-source for openvz
+  shell: echo 'deb http://download.openvz.org/debian wheezy main' > /etc/apt/sources.list.d/openvz-rhel6.list
+
+- name: add apt-key for openvz
+  apt_key: url=http://ftp.openvz.org/debian/archive.key
+
